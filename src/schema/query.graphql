@@ -1,8 +1,0 @@
-type Query {
-  usuarioLogado: Usuario
-  produtoEmDestaque: Produto
-  usuarios: [Usuario]
-  usuario: Usuario
-  perfil: Perfil
-  perfis: [Perfil]
-}

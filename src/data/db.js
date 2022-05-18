@@ -1,3 +1,7 @@
+let id = 1;
+
+const generateId = () => id++;
+
 const perfis = [
   { id: 1, nome: "comum" },
   { id: 2, nome: "administrador" },
@@ -5,7 +9,7 @@ const perfis = [
 
 const usuarios = [
   {
-    id: 1,
+    id: generateId(),
     nome: "João Silva",
     email: "jsilva@gmail.com",
     ano_nasc: 1988,
@@ -13,7 +17,7 @@ const usuarios = [
     status: "ATIVO",
   },
   {
-    id: 12,
+    id: generateId(),
     nome: "Rafael Junior",
     email: "rjunior@gmail.com",
     ano_nasc: 1985,
@@ -21,7 +25,7 @@ const usuarios = [
     status: "INATIVO",
   },
   {
-    id: 13,
+    id: generateId(),
     nome: "Daniela Smith",
     email: "dsmith@gmail.com",
     ano_nasce: 1997,
@@ -30,11 +34,4 @@ const usuarios = [
   },
 ];
 
-const produto = {
-  id: "2",
-  nome: "Samsung Galaxy s20FE Snapdragon",
-  preco: 2.399,
-  desconto: 20,
-};
-
-module.exports = { produto, usuarios, perfis };
+module.exports = { usuarios, perfis, generateId };
